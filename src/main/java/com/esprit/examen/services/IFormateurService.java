@@ -11,7 +11,7 @@ public interface IFormateurService {
 
 	void supprimerFormateur(Long formateurId);
 	
-//	Long nombreFormateursImpliquesDansUnCours(TypeCours typeCours);
+	Long nombreFormateursImpliquesDansUnCours(TypeCours typeCours);
 		
 	List<Formateur> listFormateurs();
 }

@@ -41,10 +41,10 @@ public class FormateurRestController {
 		formateurService.supprimerFormateur(formateurId);
 	}
 	
-//	@GetMapping("/nombreFormateursImpliquesDansUnCours/{typeCours}")
-//	@ResponseBody
-//	public Long nombreFormateursImpliquesDansUnCours(@PathVariable("typeCours") TypeCours typeCours) {
-//		Long nombreFormateurs=formateurService.nombreFormateursImpliquesDansUnCours(typeCours);
-//		return nombreFormateurs;
-//	}
+	@GetMapping("/nombreFormateursImpliquesDansUnCours/{typeCours}")
+	@ResponseBody
+	public Long nombreFormateursImpliquesDansUnCours(@PathVariable("typeCours") TypeCours typeCours) {
+		Long nombreFormateurs=formateurService.nombreFormateursImpliquesDansUnCours(typeCours);
+		return nombreFormateurs;
+	}
 }
