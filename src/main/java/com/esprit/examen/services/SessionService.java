@@ -2,11 +2,7 @@ package com.esprit.examen.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import com.esprit.examen.entities.Contrat;
-import com.esprit.examen.entities.Formateur;
 import com.esprit.examen.entities.Session;
-import com.esprit.examen.repositories.FormateurRepository;
 import com.esprit.examen.repositories.SessionRepository;
 
 import java.util.List;
@@ -17,15 +13,14 @@ public class SessionService implements ISessionService{
 	@Autowired
 	SessionRepository sessionRepository;
 	@Override
-	public Long addSession(Session session) {
-		sessionRepository.save(session);
-		return session.getId();
+	public Session addSession(Session session) {
+		session = sessionRepository.save(session);
+		return session;
 	}
 
 	@Override
-	public Long modifierSession(Session session) {
-		sessionRepository.save(session);
-		return session.getId();
+	public Session modifierSession(Session session) {
+		return sessionRepository.save(session);
 	}
 
 	@Override
@@ -35,8 +30,7 @@ public class SessionService implements ISessionService{
 
 	@Override
 	public void affecterFormateurASession(Long formateurId, Long sessionId) {
-			/*todo*/
-		
+		//a bullshit method
 	}
 
 	@Override

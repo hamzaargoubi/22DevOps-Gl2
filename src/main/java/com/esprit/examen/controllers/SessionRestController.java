@@ -28,7 +28,7 @@ public class SessionRestController {
 	@PutMapping("/modifierSession")
 	@ResponseBody
 	public Session modifierSession(@RequestBody Session session) {
-		sessionService.addSession(session);
+		sessionService.modifierSession(session);
 		return session;
 	}
 	

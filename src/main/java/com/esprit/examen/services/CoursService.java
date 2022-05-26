@@ -1,21 +1,20 @@
 package com.esprit.examen.services;
 
 import java.util.List;
-import java.util.Set;
 
+import com.esprit.examen.entities.Session;
+import com.esprit.examen.repositories.SessionRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import com.esprit.examen.entities.Cours;
-import com.esprit.examen.entities.Session;
 import com.esprit.examen.repositories.CoursRepository;
-import com.esprit.examen.repositories.SessionRepository;
-
 @Service
 public class CoursService implements ICoursService {
 
 	@Autowired
 	CoursRepository coursRepository;
+	@Autowired
+	SessionRepository sessionRepository;
 	@Override
 	public Long addCours(Cours cours) {
 		coursRepository.save(cours);
@@ -24,8 +23,7 @@ public class CoursService implements ICoursService {
 
 	@Override
 	public Long modifierCours(Cours cours) {
-		coursRepository.save(cours);
-		return cours.getId();
+		return coursRepository.save(cours).getId();
 		}
 
 	@Override
@@ -37,15 +35,19 @@ public class CoursService implements ICoursService {
 	@Override
 	public List<Cours> getCours() {
 		
-		List<Cours> cours =   coursRepository.findAll();
-		return cours;
+		return   coursRepository.findAll();
+
 	}
 	
 	@Override
-	public void affecterCoursASession(Long coursId, Long sessionId)
+	public void affecterCoursASession(Long coursId, Long sessionId) throws NullPointerException
 	{
-		/*todo*/
-        
+			Session session = sessionRepository.findById(sessionId).orElse(null);
+			Cours cours = coursRepository.findById(coursId).orElse(null);
+
+				session.getCours().add(cours);
+				sessionRepository.save(session);
+
 	}
 
 }

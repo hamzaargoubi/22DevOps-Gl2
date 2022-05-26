@@ -2,6 +2,9 @@ package com.esprit.examen.services;
 
 import java.util.List;
 
+import com.esprit.examen.config.LoggingAspect;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -11,19 +14,17 @@ import com.esprit.examen.repositories.FormateurRepository;
 
 @Service
 public class FormateurService implements IFormateurService{
-
 	@Autowired
 	FormateurRepository formateurRepository;
 	@Override
-	public Long addFormateur(Formateur formateur) {
+	public Formateur addFormateur(Formateur formateur) {
 		formateurRepository.save(formateur);
-		return formateur.getId();
+		return formateur;
 	}
 
 	@Override
-	public Long modifierFormateur(Formateur formateur) {
-		formateurRepository.save(formateur);
-		return formateur.getId();
+	public Formateur modifierFormateur(Formateur formateur) {
+		return formateurRepository.save(formateur);
 	}
 
 	@Override
@@ -37,6 +38,10 @@ public class FormateurService implements IFormateurService{
 		return formateurRepository.nombreFormateursImpliquesDansUnCours(typeCours);
 	}
 
+	@Override
+	public Formateur getFormateurById(Long id) {
+		return formateurRepository.findById(id).orElse(null);
+	}
 
 
 	@Override

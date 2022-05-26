@@ -27,15 +27,15 @@ public class Session implements Serializable{
 	private Long duree;
 	private String description;
 	@ManyToOne
-    Formateur formateur;
+    private Formateur formateur;
 	@ManyToMany
-	Set<Cours> cours;
+	private Set<Cours> cours;
 
 	@ManyToMany
-	List<Planning> plannings;
+	private List<Planning> plannings;
 
 	@ManyToOne
-	Salle salle;
+	private Salle salle;
 	
 	public Long getId() {
 		return id;
@@ -108,7 +108,6 @@ public class Session implements Serializable{
 	}
 	public Session() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 	
 	
