@@ -28,7 +28,7 @@ public class Formateur implements Serializable{
 	private Boolean admin;
 	@OneToMany(mappedBy="formateur")
 	private Set<Session> sessions;
-	
+
 	public Long getId() {
 		return id;
 	}
@@ -103,7 +103,6 @@ public class Formateur implements Serializable{
 	}
 	public Formateur() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 	
 	

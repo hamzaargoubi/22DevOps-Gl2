@@ -5,13 +5,15 @@ import com.esprit.examen.entities.Formateur;
 import com.esprit.examen.entities.TypeCours;
 
 public interface IFormateurService {
-	Long addFormateur(Formateur formateur);
+	Formateur addFormateur(Formateur formateur);
 
-	Long modifierFormateur(Formateur formateur);
+	Formateur modifierFormateur(Formateur formateur);
 
 	void supprimerFormateur(Long formateurId);
-	
+
 	Long nombreFormateursImpliquesDansUnCours(TypeCours typeCours);
+
+	Formateur getFormateurById(Long id);
 		
 	List<Formateur> listFormateurs();
 }

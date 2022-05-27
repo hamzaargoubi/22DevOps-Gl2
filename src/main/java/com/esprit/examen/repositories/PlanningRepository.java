@@ -1,11 +1,9 @@
 package com.esprit.examen.repositories;
 
+import com.esprit.examen.entities.Planning;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.esprit.examen.entities.Session;
-
 @Repository
-public interface SessionRepository extends JpaRepository<Session, Long>{
-
+public interface PlanningRepository extends JpaRepository<Planning, Long> {
 }

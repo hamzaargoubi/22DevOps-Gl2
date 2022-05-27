@@ -5,9 +5,9 @@ import com.esprit.examen.entities.Session;
 import java.util.List;
 
 public interface ISessionService {
-	Long addSession(Session session);
+	Session addSession(Session session);
 
-	Long modifierSession(Session session);
+	Session modifierSession(Session session);
 
 	void supprimerSession(Long sessionId);
 	
