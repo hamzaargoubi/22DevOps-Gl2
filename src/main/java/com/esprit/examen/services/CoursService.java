@@ -39,6 +39,8 @@ public class CoursService implements ICoursService {
 
 	}
 	
+	
+	
 	@Override
 	public void affecterCoursASession(Long coursId, Long sessionId) throws NullPointerException
 	{
@@ -49,5 +51,14 @@ public class CoursService implements ICoursService {
 				sessionRepository.save(session);
 
 	}
+
+
+	@Override
+	public Cours getCoursById(Long coursId) {
+			
+			return   coursRepository.findById(coursId).orElse(null);
+
+		}
+	
 
 }
