@@ -1,6 +1,7 @@
 package com.esprit.examen;
 
 import com.esprit.examen.entities.Session;
+import com.esprit.examen.repositories.SessionRepository;
 import com.esprit.examen.services.ISessionService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -20,6 +21,8 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class TestServiceSession {
     @Autowired
     public ISessionService sesionService;
+    @Autowired
+    public SessionRepository sessionRepository;
 
 
     @Test
@@ -36,5 +39,23 @@ public class TestServiceSession {
     public void testListSessions() {
         List<Session> sesions =  sesionService.listSessions();
         assertThat(sesions).size().isPositive();
+    }
+    @Test
+    public void testmodifierSession() {
+        Session s =sessionRepository.findById(1l).get();
+        s.setDuree(300l);
+        Session session=sesionService.modifierSession(s);
+        assertThat(session.getDuree()).isEqualTo(300l);
+    }
+
+    @Test
+    public void testSupprimerSession(){
+
+        sesionService.supprimerSession(1L);
+        List<Session> sessions =  sesionService.listSessions();
+        for (Session s : sessions){
+            assertThat(s.getId()).isNotEqualTo(1L);
+        }
+
     }
 }
