@@ -14,6 +14,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import static org.junit.jupiter.api.Assertions.assertNull;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -49,13 +50,14 @@ public class TestServiceEtudiant {
         assertTrue(etudiantService.getOne(1L).getName().equals("abdou"));
     }
 
-//    @Test
-//    public void supprimerEtudiant(){
-//        etudiantService.supprimerEtudiant(3L);
-//        assertTrue(etudiantService.listEtudiant()
-//                .stream().filter(e->e.getId()==3L)
-//                .collect(Collectors.toList()).size()==0);
-//    }
+    @Test
+    public void supprimer() throws ParseException {
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+        Date date = dateFormat.parse("2015-03-23");
+        Long etudiantId = etudiantService.addEtudiant(new Etudiant("etudiant",date));
+        etudiantService.supprimerEtudiant(etudiantId);
+        assertNull(etudiantService.getOne(etudiantId));
+    }
 
     @Test
     public void getOne(){

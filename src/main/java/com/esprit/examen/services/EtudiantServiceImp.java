@@ -38,7 +38,7 @@ public class EtudiantServiceImp implements IEtudiantService{
 
     @Override
     public Etudiant getOne(Long id) {
-        return etudiantRepository.findById(id).get();
+        return etudiantRepository.findById(id).orElse(null);
 
     }
 }
