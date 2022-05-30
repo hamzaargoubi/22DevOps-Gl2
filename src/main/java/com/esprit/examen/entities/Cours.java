@@ -4,13 +4,7 @@ import java.io.Serializable;
 import java.util.List;
 import java.util.Set;
 
-import javax.persistence.Entity;
-import javax.persistence.EnumType;
-import javax.persistence.Enumerated;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.ManyToMany;
+import javax.persistence.*;
 
 @Entity
 public class Cours implements Serializable {
@@ -25,7 +19,8 @@ public class Cours implements Serializable {
 	@ManyToMany(mappedBy="cours")
 	private Set<Session> sessions;
 	@ManyToMany
-	private List<Etudiant> etudiants;
+
+	private transient List<Etudiant> etudiants;
 	public Long getId() {
 		return id;
 	}
