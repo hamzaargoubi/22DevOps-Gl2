@@ -31,11 +31,8 @@ public class Session implements Serializable{
 	@ManyToMany
 	Set<Cours> cours;
 
-	@ManyToMany
-	List<Planning> plannings;
-
 	@ManyToOne
-	Salle salle;
+	private Salle salle;
 	
 	public Long getId() {
 		return id;
@@ -79,8 +76,6 @@ public class Session implements Serializable{
 	public void setCours(Set<Cours> cours) {
 		this.cours = cours;
 	}
-	public List<Planning> getPlannings() {return this.plannings;}
-	public void setPlannings(List<Planning> plannings) {this.plannings = plannings;}
 	public Salle getSalle() { return salle; }
 	public void setSalle(Salle salle) {this.salle = salle;}
 
@@ -94,7 +89,6 @@ public class Session implements Serializable{
 				", description='" + description + '\'' +
 				", formateur=" + formateur +
 				", cours=" + cours +
-				", plannings=" + plannings +
 				", salle=" + salle +
 				'}';
 	}
