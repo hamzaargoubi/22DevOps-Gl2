@@ -18,9 +18,6 @@ public class Cours implements Serializable {
 	private String intitule;
 	@ManyToMany(mappedBy="cours")
 	private Set<Session> sessions;
-	@ManyToMany
-
-	private transient List<Etudiant> etudiants;
 	public Long getId() {
 		return id;
 	}
@@ -54,14 +51,6 @@ public class Cours implements Serializable {
 		this.sessions = sessions;
 	}
 
-	public List<Etudiant> getEtudiants() {
-		return etudiants;
-	}
-
-	public void setEtudiants(List<Etudiant> etudiants) {
-		this.etudiants = etudiants;
-	}
-
 	@Override
 	public String toString() {
 		return "Cours{" +
@@ -70,7 +59,6 @@ public class Cours implements Serializable {
 				", typeCours=" + typeCours +
 				", intitule='" + intitule + '\'' +
 				", sessions=" + sessions +
-				", etudiants=" + etudiants +
 				'}';
 	}
 

@@ -30,8 +30,8 @@ public class Session implements Serializable{
     Formateur formateur;
 	@ManyToMany
 	Set<Cours> cours;
-
-
+	@ManyToOne
+	private Salle salle;
 	
 	public Long getId() {
 		return id;
@@ -76,6 +76,8 @@ public class Session implements Serializable{
 		this.cours = cours;
 	}
 
+	public Salle getSalle() { return salle; }
+	public void setSalle(Salle salle) {this.salle = salle;}
 
 	@Override
 	public String toString() {
@@ -87,7 +89,7 @@ public class Session implements Serializable{
 				", description='" + description + '\'' +
 				", formateur=" + formateur +
 				", cours=" + cours +
-
+				", salle=" + salle +
 				'}';
 	}
 
