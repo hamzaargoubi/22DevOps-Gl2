@@ -1,0 +1,118 @@
+2022-05-31 13:49:10.033  INFO 15528 --- [main] com.esprit.examen.TestServiceSalle       : Starting TestServiceSalle on DESKTOP-G0GD0KR with PID 15528 (started by abdou in C:\Users\abdou\Desktop\22DevOps-Gl2)
+2022-05-31 13:49:10.035  INFO 15528 --- [main] com.esprit.examen.TestServiceSalle       : No active profile set, falling back to default profiles: default
+2022-05-31 13:49:10.925  INFO 15528 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2022-05-31 13:49:11.040  INFO 15528 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 101ms. Found 4 repository interfaces.
+2022-05-31 13:49:11.485  INFO 15528 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-31 13:49:11.933  INFO 15528 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-31 13:49:12.032  INFO 15528 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.8.Final}
+2022-05-31 13:49:12.262  INFO 15528 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2022-05-31 13:49:12.685  INFO 15528 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-31 13:49:12.879  INFO 15528 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-31 13:49:12.900  INFO 15528 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-05-31 13:49:14.007  INFO 15528 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-31 13:49:14.017  INFO 15528 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-31 13:49:15.058  WARN 15528 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-31 13:49:15.450  INFO 15528 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-05-31 13:49:16.019  INFO 15528 --- [main] com.esprit.examen.TestServiceSalle       : Started TestServiceSalle in 6.422 seconds (JVM running for 7.612)
+2022-05-31 13:49:16.530  INFO 15528 --- [main] com.esprit.examen.config.LoggingAspect   : méthode : listSalle  exécutée avec succès
+2022-05-31 13:49:16.531  INFO 15528 --- [main] com.esprit.examen.TestServiceSalle       : list des salle
+2022-05-31 13:49:16.532  INFO 15528 --- [main] com.esprit.examen.TestServiceSalle       : Salle{id=1, ref='azzz', typeSalle=LABORATOIRE}
+2022-05-31 13:49:16.532  INFO 15528 --- [main] com.esprit.examen.TestServiceSalle       : Salle{id=5, ref='25', typeSalle=LABORATOIRE}
+2022-05-31 13:49:16.532  INFO 15528 --- [main] com.esprit.examen.TestServiceSalle       : Salle{id=6, ref='25', typeSalle=LABORATOIRE}
+2022-05-31 13:49:16.532  INFO 15528 --- [main] com.esprit.examen.TestServiceSalle       : Salle{id=7, ref='25', typeSalle=LABORATOIRE}
+2022-05-31 13:49:16.533  INFO 15528 --- [main] com.esprit.examen.TestServiceSalle       : Salle{id=9, ref='25', typeSalle=LABORATOIRE}
+2022-05-31 13:49:16.533  INFO 15528 --- [main] com.esprit.examen.TestServiceSalle       : Salle{id=10, ref='25', typeSalle=LABORATOIRE}
+2022-05-31 13:49:16.533  INFO 15528 --- [main] com.esprit.examen.TestServiceSalle       : Salle{id=12, ref='25', typeSalle=LABORATOIRE}
+2022-05-31 13:49:16.533  INFO 15528 --- [main] com.esprit.examen.TestServiceSalle       : Salle{id=14, ref='25', typeSalle=LABORATOIRE}
+2022-05-31 13:49:16.533  INFO 15528 --- [main] com.esprit.examen.TestServiceSalle       : Salle{id=16, ref='25', typeSalle=LABORATOIRE}
+2022-05-31 13:49:16.533  INFO 15528 --- [main] com.esprit.examen.TestServiceSalle       : Salle{id=18, ref='25', typeSalle=LABORATOIRE}
+2022-05-31 13:49:16.533  INFO 15528 --- [main] com.esprit.examen.TestServiceSalle       : Salle{id=20, ref='25', typeSalle=LABORATOIRE}
+2022-05-31 13:49:16.533  INFO 15528 --- [main] com.esprit.examen.TestServiceSalle       : Salle{id=21, ref='25', typeSalle=LABORATOIRE}
+2022-05-31 13:49:16.534  INFO 15528 --- [main] com.esprit.examen.TestServiceSalle       : Salle{id=22, ref='25', typeSalle=LABORATOIRE}
+2022-05-31 13:49:16.534  INFO 15528 --- [main] com.esprit.examen.TestServiceSalle       : Salle{id=23, ref='25', typeSalle=LABORATOIRE}
+2022-05-31 13:49:16.534  INFO 15528 --- [main] com.esprit.examen.TestServiceSalle       : Salle{id=24, ref='25', typeSalle=LABORATOIRE}
+2022-05-31 13:49:16.534  INFO 15528 --- [main] com.esprit.examen.TestServiceSalle       : Salle{id=25, ref='25', typeSalle=LABORATOIRE}
+2022-05-31 13:49:16.534  INFO 15528 --- [main] com.esprit.examen.TestServiceSalle       : Salle{id=26, ref='25', typeSalle=LABORATOIRE}
+2022-05-31 13:49:16.534  INFO 15528 --- [main] com.esprit.examen.TestServiceSalle       : Salle{id=27, ref='25', typeSalle=LABORATOIRE}
+2022-05-31 13:49:16.534  INFO 15528 --- [main] com.esprit.examen.TestServiceSalle       : Salle{id=29, ref='25', typeSalle=LABORATOIRE}
+2022-05-31 13:49:16.534  INFO 15528 --- [main] com.esprit.examen.TestServiceSalle       : Salle{id=31, ref='25', typeSalle=LABORATOIRE}
+2022-05-31 13:49:16.535  INFO 15528 --- [main] com.esprit.examen.TestServiceSalle       : Salle{id=33, ref='25', typeSalle=LABORATOIRE}
+2022-05-31 13:49:16.535  INFO 15528 --- [main] com.esprit.examen.TestServiceSalle       : Salle{id=35, ref='25', typeSalle=LABORATOIRE}
+2022-05-31 13:49:16.535  INFO 15528 --- [main] com.esprit.examen.TestServiceSalle       : Salle{id=37, ref='25', typeSalle=LABORATOIRE}
+2022-05-31 13:49:16.535  INFO 15528 --- [main] com.esprit.examen.TestServiceSalle       : Salle{id=39, ref='25', typeSalle=LABORATOIRE}
+2022-05-31 13:49:16.535  INFO 15528 --- [main] com.esprit.examen.TestServiceSalle       : Salle{id=41, ref='25', typeSalle=LABORATOIRE}
+2022-05-31 13:49:16.536  INFO 15528 --- [main] com.esprit.examen.TestServiceSalle       : Salle{id=43, ref='25', typeSalle=LABORATOIRE}
+2022-05-31 13:49:16.536  INFO 15528 --- [main] com.esprit.examen.TestServiceSalle       : Salle{id=45, ref='25', typeSalle=LABORATOIRE}
+2022-05-31 13:49:16.536  INFO 15528 --- [main] com.esprit.examen.TestServiceSalle       : Salle{id=47, ref='25', typeSalle=LABORATOIRE}
+2022-05-31 13:49:16.536  INFO 15528 --- [main] com.esprit.examen.TestServiceSalle       : Salle{id=49, ref='25', typeSalle=LABORATOIRE}
+2022-05-31 13:49:16.536  INFO 15528 --- [main] com.esprit.examen.TestServiceSalle       : fin list des salle
+2022-05-31 13:49:16.633  INFO 15528 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-05-31 13:49:16.636  INFO 15528 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-31 13:49:16.638  INFO 15528 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-05-31 13:49:16.652  INFO 15528 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-05-31 13:49:47.062  INFO 8692 --- [main] com.esprit.examen.TestServiceSalle       : Starting TestServiceSalle on DESKTOP-G0GD0KR with PID 8692 (started by abdou in C:\Users\abdou\Desktop\22DevOps-Gl2)
+2022-05-31 13:49:47.064  INFO 8692 --- [main] com.esprit.examen.TestServiceSalle       : No active profile set, falling back to default profiles: default
+2022-05-31 13:49:47.925  INFO 8692 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2022-05-31 13:49:48.032  INFO 8692 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 95ms. Found 4 repository interfaces.
+2022-05-31 13:49:48.486  INFO 8692 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-31 13:49:48.924  INFO 8692 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-31 13:49:49.020  INFO 8692 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.8.Final}
+2022-05-31 13:49:49.268  INFO 8692 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2022-05-31 13:49:49.749  INFO 8692 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-31 13:49:49.950  INFO 8692 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-31 13:49:49.974  INFO 8692 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-05-31 13:49:51.100  INFO 8692 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-31 13:49:51.110  INFO 8692 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-31 13:49:52.209  WARN 8692 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-31 13:49:52.574  INFO 8692 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-05-31 13:49:53.157  INFO 8692 --- [main] com.esprit.examen.TestServiceSalle       : Started TestServiceSalle in 6.53 seconds (JVM running for 7.746)
+2022-05-31 13:49:53.352  INFO 8692 --- [main] com.esprit.examen.config.LoggingAspect   : méthode : getSalle  exécutée avec succès
+2022-05-31 13:49:53.379  INFO 8692 --- [main] com.esprit.examen.config.LoggingAspect   : méthode : modifierSalle  exécutée avec succès
+2022-05-31 13:49:53.388  INFO 8692 --- [main] com.esprit.examen.config.LoggingAspect   : méthode : getSalle  exécutée avec succès
+2022-05-31 13:49:53.389  INFO 8692 --- [main] com.esprit.examen.TestServiceSalle       : salle 1modifier avec succes
+2022-05-31 13:49:53.436  INFO 8692 --- [main] com.esprit.examen.config.LoggingAspect   : méthode : addSalle  exécutée avec succès
+2022-05-31 13:49:53.679  INFO 8692 --- [main] com.esprit.examen.TestServiceSalle       : salle ajouter avec succes
+2022-05-31 13:49:53.891  INFO 8692 --- [main] com.esprit.examen.config.LoggingAspect   : méthode : listSalle  exécutée avec succès
+2022-05-31 13:49:53.892  INFO 8692 --- [main] com.esprit.examen.TestServiceSalle       : list des salle
+2022-05-31 13:49:53.892  INFO 8692 --- [main] com.esprit.examen.TestServiceSalle       : Salle{id=1, ref='azzz', typeSalle=LABORATOIRE}
+2022-05-31 13:49:53.892  INFO 8692 --- [main] com.esprit.examen.TestServiceSalle       : Salle{id=5, ref='25', typeSalle=LABORATOIRE}
+2022-05-31 13:49:53.892  INFO 8692 --- [main] com.esprit.examen.TestServiceSalle       : Salle{id=6, ref='25', typeSalle=LABORATOIRE}
+2022-05-31 13:49:53.892  INFO 8692 --- [main] com.esprit.examen.TestServiceSalle       : Salle{id=7, ref='25', typeSalle=LABORATOIRE}
+2022-05-31 13:49:53.892  INFO 8692 --- [main] com.esprit.examen.TestServiceSalle       : Salle{id=9, ref='25', typeSalle=LABORATOIRE}
+2022-05-31 13:49:53.892  INFO 8692 --- [main] com.esprit.examen.TestServiceSalle       : Salle{id=10, ref='25', typeSalle=LABORATOIRE}
+2022-05-31 13:49:53.893  INFO 8692 --- [main] com.esprit.examen.TestServiceSalle       : Salle{id=12, ref='25', typeSalle=LABORATOIRE}
+2022-05-31 13:49:53.893  INFO 8692 --- [main] com.esprit.examen.TestServiceSalle       : Salle{id=14, ref='25', typeSalle=LABORATOIRE}
+2022-05-31 13:49:53.893  INFO 8692 --- [main] com.esprit.examen.TestServiceSalle       : Salle{id=16, ref='25', typeSalle=LABORATOIRE}
+2022-05-31 13:49:53.893  INFO 8692 --- [main] com.esprit.examen.TestServiceSalle       : Salle{id=18, ref='25', typeSalle=LABORATOIRE}
+2022-05-31 13:49:53.893  INFO 8692 --- [main] com.esprit.examen.TestServiceSalle       : Salle{id=20, ref='25', typeSalle=LABORATOIRE}
+2022-05-31 13:49:53.893  INFO 8692 --- [main] com.esprit.examen.TestServiceSalle       : Salle{id=21, ref='25', typeSalle=LABORATOIRE}
+2022-05-31 13:49:53.893  INFO 8692 --- [main] com.esprit.examen.TestServiceSalle       : Salle{id=22, ref='25', typeSalle=LABORATOIRE}
+2022-05-31 13:49:53.893  INFO 8692 --- [main] com.esprit.examen.TestServiceSalle       : Salle{id=23, ref='25', typeSalle=LABORATOIRE}
+2022-05-31 13:49:53.894  INFO 8692 --- [main] com.esprit.examen.TestServiceSalle       : Salle{id=24, ref='25', typeSalle=LABORATOIRE}
+2022-05-31 13:49:53.894  INFO 8692 --- [main] com.esprit.examen.TestServiceSalle       : Salle{id=25, ref='25', typeSalle=LABORATOIRE}
+2022-05-31 13:49:53.894  INFO 8692 --- [main] com.esprit.examen.TestServiceSalle       : Salle{id=26, ref='25', typeSalle=LABORATOIRE}
+2022-05-31 13:49:53.894  INFO 8692 --- [main] com.esprit.examen.TestServiceSalle       : Salle{id=27, ref='25', typeSalle=LABORATOIRE}
+2022-05-31 13:49:53.894  INFO 8692 --- [main] com.esprit.examen.TestServiceSalle       : Salle{id=29, ref='25', typeSalle=LABORATOIRE}
+2022-05-31 13:49:53.894  INFO 8692 --- [main] com.esprit.examen.TestServiceSalle       : Salle{id=31, ref='25', typeSalle=LABORATOIRE}
+2022-05-31 13:49:53.894  INFO 8692 --- [main] com.esprit.examen.TestServiceSalle       : Salle{id=33, ref='25', typeSalle=LABORATOIRE}
+2022-05-31 13:49:53.894  INFO 8692 --- [main] com.esprit.examen.TestServiceSalle       : Salle{id=35, ref='25', typeSalle=LABORATOIRE}
+2022-05-31 13:49:53.894  INFO 8692 --- [main] com.esprit.examen.TestServiceSalle       : Salle{id=37, ref='25', typeSalle=LABORATOIRE}
+2022-05-31 13:49:53.895  INFO 8692 --- [main] com.esprit.examen.TestServiceSalle       : Salle{id=39, ref='25', typeSalle=LABORATOIRE}
+2022-05-31 13:49:53.895  INFO 8692 --- [main] com.esprit.examen.TestServiceSalle       : Salle{id=41, ref='25', typeSalle=LABORATOIRE}
+2022-05-31 13:49:53.895  INFO 8692 --- [main] com.esprit.examen.TestServiceSalle       : Salle{id=43, ref='25', typeSalle=LABORATOIRE}
+2022-05-31 13:49:53.895  INFO 8692 --- [main] com.esprit.examen.TestServiceSalle       : Salle{id=45, ref='25', typeSalle=LABORATOIRE}
+2022-05-31 13:49:53.895  INFO 8692 --- [main] com.esprit.examen.TestServiceSalle       : Salle{id=47, ref='25', typeSalle=LABORATOIRE}
+2022-05-31 13:49:53.895  INFO 8692 --- [main] com.esprit.examen.TestServiceSalle       : Salle{id=49, ref='25', typeSalle=LABORATOIRE}
+2022-05-31 13:49:53.895  INFO 8692 --- [main] com.esprit.examen.TestServiceSalle       : Salle{id=51, ref='25', typeSalle=LABORATOIRE}
+2022-05-31 13:49:53.895  INFO 8692 --- [main] com.esprit.examen.TestServiceSalle       : fin list des salle
+2022-05-31 13:49:53.938  INFO 8692 --- [main] com.esprit.examen.config.LoggingAspect   : méthode : addSalle  exécutée avec succès
+2022-05-31 13:49:53.956  INFO 8692 --- [main] com.esprit.examen.config.LoggingAspect   : méthode : supprimerSalle  exécutée avec succès
+2022-05-31 13:49:53.958  INFO 8692 --- [main] com.esprit.examen.config.LoggingAspect   : méthode : getSalle  exécutée avec succès
+2022-05-31 13:49:53.961  WARN 8692 --- [main] com.esprit.examen.TestServiceSalle       : salle 52 supprimer avec succes
+2022-05-31 13:49:53.967  INFO 8692 --- [main] com.esprit.examen.config.LoggingAspect   : méthode : getSalle  exécutée avec succès
+2022-05-31 13:49:53.967  INFO 8692 --- [main] com.esprit.examen.TestServiceSalle       : Salle id : 1
+2022-05-31 13:49:53.967  INFO 8692 --- [main] com.esprit.examen.TestServiceSalle       : Salle{id=1, ref='azzz', typeSalle=LABORATOIRE}
+2022-05-31 13:49:53.975  INFO 8692 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-05-31 13:49:53.977  INFO 8692 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-31 13:49:53.979  INFO 8692 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-05-31 13:49:53.994  INFO 8692 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

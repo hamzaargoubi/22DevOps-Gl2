@@ -61,7 +61,6 @@ public class Salle implements Serializable {
                 "id=" + id +
                 ", ref='" + ref + '\'' +
                 ", typeSalle=" + typeSalle +
-                ", sessions=" + sessions +
                 '}';
     }
 }
