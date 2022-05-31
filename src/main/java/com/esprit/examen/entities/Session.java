@@ -30,7 +30,6 @@ public class Session implements Serializable{
     Formateur formateur;
 	@ManyToMany
 	Set<Cours> cours;
-
 	@ManyToOne
 	private Salle salle;
 	
@@ -76,6 +75,7 @@ public class Session implements Serializable{
 	public void setCours(Set<Cours> cours) {
 		this.cours = cours;
 	}
+
 	public Salle getSalle() { return salle; }
 	public void setSalle(Salle salle) {this.salle = salle;}
 
