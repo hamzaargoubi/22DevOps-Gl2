@@ -116,3 +116,149 @@
 2022-05-31 13:49:53.977  INFO 8692 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2022-05-31 13:49:53.979  INFO 8692 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2022-05-31 13:49:53.994  INFO 8692 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-05-31 14:20:27.330  INFO 26180 --- [main] com.esprit.examen.TestServiceEtudiant    : Starting TestServiceEtudiant on LAPTOP-DRPN4MGP with PID 26180 (started by devdr in D:\projetDevOpsEsprit\22DevOps-Gl2)
+2022-05-31 14:20:27.332  INFO 26180 --- [main] com.esprit.examen.TestServiceEtudiant    : No active profile set, falling back to default profiles: default
+2022-05-31 14:20:28.862  INFO 26180 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2022-05-31 14:20:29.075  INFO 26180 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 187ms. Found 5 repository interfaces.
+2022-05-31 14:20:29.772  INFO 26180 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-31 14:20:30.430  INFO 26180 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-31 14:20:30.631  INFO 26180 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.8.Final}
+2022-05-31 14:20:30.946  INFO 26180 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2022-05-31 14:20:31.399  INFO 26180 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-31 14:20:31.648  INFO 26180 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-31 14:20:31.685  INFO 26180 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-05-31 14:20:32.914  INFO 26180 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-31 14:20:32.926  INFO 26180 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-31 14:20:33.950  WARN 26180 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-31 14:20:34.290  INFO 26180 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-05-31 14:20:34.717  INFO 26180 --- [main] com.esprit.examen.TestServiceEtudiant    : Started TestServiceEtudiant in 8.148 seconds (JVM running for 9.932)
+2022-05-31 14:20:34.972  INFO 26180 --- [main] com.esprit.examen.config.LoggingAspect   : méthode : addEtudiant  exécutée avec succès
+2022-05-31 14:20:35.025  INFO 26180 --- [main] com.esprit.examen.config.LoggingAspect   : méthode : supprimerEtudiant  exécutée avec succès
+2022-05-31 14:20:35.032  INFO 26180 --- [main] com.esprit.examen.config.LoggingAspect   : méthode : getOne  exécutée avec succès
+2022-05-31 14:20:35.035  WARN 26180 --- [main] com.esprit.examen.TestServiceEtudiant    : Etudiant 73 supprimer avec succes
+2022-05-31 14:20:35.046  INFO 26180 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-05-31 14:20:35.049  INFO 26180 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-31 14:20:35.052  INFO 26180 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-05-31 14:20:35.067  INFO 26180 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-05-31 14:20:52.340  INFO 20868 --- [main] com.esprit.examen.TestServiceEtudiant    : Starting TestServiceEtudiant on LAPTOP-DRPN4MGP with PID 20868 (started by devdr in D:\projetDevOpsEsprit\22DevOps-Gl2)
+2022-05-31 14:20:52.343  INFO 20868 --- [main] com.esprit.examen.TestServiceEtudiant    : No active profile set, falling back to default profiles: default
+2022-05-31 14:20:53.468  INFO 20868 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2022-05-31 14:20:53.604  INFO 20868 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 118ms. Found 5 repository interfaces.
+2022-05-31 14:20:54.188  INFO 20868 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-31 14:20:54.712  INFO 20868 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-31 14:20:54.840  INFO 20868 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.8.Final}
+2022-05-31 14:20:55.091  INFO 20868 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2022-05-31 14:20:55.558  INFO 20868 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-31 14:20:55.792  INFO 20868 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-31 14:20:55.823  INFO 20868 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-05-31 14:20:57.130  INFO 20868 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-31 14:20:57.146  INFO 20868 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-31 14:20:58.219  WARN 20868 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-31 14:20:58.575  INFO 20868 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-05-31 14:20:59.010  INFO 20868 --- [main] com.esprit.examen.TestServiceEtudiant    : Started TestServiceEtudiant in 7.434 seconds (JVM running for 9.172)
+2022-05-31 14:20:59.287  INFO 20868 --- [main] com.esprit.examen.config.LoggingAspect   : méthode : addEtudiant  exécutée avec succès
+2022-05-31 14:20:59.350  INFO 20868 --- [main] com.esprit.examen.config.LoggingAspect   : méthode : supprimerEtudiant  exécutée avec succès
+2022-05-31 14:20:59.357  INFO 20868 --- [main] com.esprit.examen.config.LoggingAspect   : méthode : getOne  exécutée avec succès
+2022-05-31 14:20:59.364  WARN 20868 --- [main] com.esprit.examen.TestServiceEtudiant    : Etudiant 74 supprimer avec succes
+2022-05-31 14:20:59.382  INFO 20868 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-05-31 14:20:59.384  INFO 20868 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-31 14:20:59.387  INFO 20868 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-05-31 14:20:59.404  INFO 20868 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-05-31 14:23:21.270  INFO 19028 --- [main] com.esprit.examen.TestServiceEtudiant    : Starting TestServiceEtudiant on LAPTOP-DRPN4MGP with PID 19028 (started by devdr in D:\projetDevOpsEsprit\22DevOps-Gl2)
+2022-05-31 14:23:21.274  INFO 19028 --- [main] com.esprit.examen.TestServiceEtudiant    : No active profile set, falling back to default profiles: default
+2022-05-31 14:23:22.355  INFO 19028 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2022-05-31 14:23:22.515  INFO 19028 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 144ms. Found 5 repository interfaces.
+2022-05-31 14:23:23.086  INFO 19028 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-31 14:23:23.729  INFO 19028 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-31 14:23:23.884  INFO 19028 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.8.Final}
+2022-05-31 14:23:24.145  INFO 19028 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2022-05-31 14:23:24.611  INFO 19028 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-31 14:23:24.880  INFO 19028 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-31 14:23:24.907  INFO 19028 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-05-31 14:23:26.200  INFO 19028 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-31 14:23:26.209  INFO 19028 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-31 14:23:27.382  WARN 19028 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-31 14:23:27.730  INFO 19028 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-05-31 14:23:28.228  INFO 19028 --- [main] com.esprit.examen.TestServiceEtudiant    : Started TestServiceEtudiant in 7.646 seconds (JVM running for 9.309)
+2022-05-31 14:23:28.482  INFO 19028 --- [main] com.esprit.examen.config.LoggingAspect   : méthode : modifierEtudiant  exécutée avec succès
+2022-05-31 14:23:28.598  INFO 19028 --- [main] com.esprit.examen.TestServiceEtudiant    : Etudiant ajouter avec succes
+2022-05-31 14:23:28.855  INFO 19028 --- [main] com.esprit.examen.config.LoggingAspect   : méthode : listEtudiant  exécutée avec succès
+2022-05-31 14:23:28.855  INFO 19028 --- [main] com.esprit.examen.TestServiceEtudiant    : list des etudiants
+2022-05-31 14:23:28.855  INFO 19028 --- [main] com.esprit.examen.TestServiceEtudiant    : Etudiant{id=1, name='abdou', birthday=2015-03-27 00:00:00.0}
+2022-05-31 14:23:28.856  INFO 19028 --- [main] com.esprit.examen.TestServiceEtudiant    : Etudiant{id=2, name='etudiant1', birthday=2015-03-23 00:00:00.0}
+2022-05-31 14:23:28.856  INFO 19028 --- [main] com.esprit.examen.TestServiceEtudiant    : Etudiant{id=5, name='etudiant', birthday=2015-03-23 00:00:00.0}
+2022-05-31 14:23:28.856  INFO 19028 --- [main] com.esprit.examen.TestServiceEtudiant    : Etudiant{id=6, name='etudiant', birthday=2015-03-23 00:00:00.0}
+2022-05-31 14:23:28.856  INFO 19028 --- [main] com.esprit.examen.TestServiceEtudiant    : Etudiant{id=7, name='etudiant', birthday=2015-03-23 00:00:00.0}
+2022-05-31 14:23:28.856  INFO 19028 --- [main] com.esprit.examen.TestServiceEtudiant    : Etudiant{id=8, name='etudiant', birthday=2015-03-23 00:00:00.0}
+2022-05-31 14:23:28.856  INFO 19028 --- [main] com.esprit.examen.TestServiceEtudiant    : Etudiant{id=9, name='etudiant', birthday=2015-03-23 00:00:00.0}
+2022-05-31 14:23:28.856  INFO 19028 --- [main] com.esprit.examen.TestServiceEtudiant    : Etudiant{id=10, name='etudiant', birthday=2015-03-23 00:00:00.0}
+2022-05-31 14:23:28.856  INFO 19028 --- [main] com.esprit.examen.TestServiceEtudiant    : Etudiant{id=11, name='etudiant', birthday=2015-03-23 00:00:00.0}
+2022-05-31 14:23:28.856  INFO 19028 --- [main] com.esprit.examen.TestServiceEtudiant    : Etudiant{id=12, name='etudiant', birthday=2015-03-23 00:00:00.0}
+2022-05-31 14:23:28.856  INFO 19028 --- [main] com.esprit.examen.TestServiceEtudiant    : Etudiant{id=13, name='etudiant', birthday=2015-03-23 00:00:00.0}
+2022-05-31 14:23:28.856  INFO 19028 --- [main] com.esprit.examen.TestServiceEtudiant    : Etudiant{id=14, name='etudiant', birthday=2015-03-23 00:00:00.0}
+2022-05-31 14:23:28.857  INFO 19028 --- [main] com.esprit.examen.TestServiceEtudiant    : Etudiant{id=15, name='etudiant', birthday=2015-03-23 00:00:00.0}
+2022-05-31 14:23:28.857  INFO 19028 --- [main] com.esprit.examen.TestServiceEtudiant    : Etudiant{id=16, name='etudiant', birthday=2015-03-23 00:00:00.0}
+2022-05-31 14:23:28.857  INFO 19028 --- [main] com.esprit.examen.TestServiceEtudiant    : Etudiant{id=17, name='etudiant', birthday=2015-03-23 00:00:00.0}
+2022-05-31 14:23:28.857  INFO 19028 --- [main] com.esprit.examen.TestServiceEtudiant    : Etudiant{id=18, name='etudiant', birthday=2015-03-23 00:00:00.0}
+2022-05-31 14:23:28.857  INFO 19028 --- [main] com.esprit.examen.TestServiceEtudiant    : Etudiant{id=19, name='etudiant', birthday=2015-03-23 00:00:00.0}
+2022-05-31 14:23:28.857  INFO 19028 --- [main] com.esprit.examen.TestServiceEtudiant    : Etudiant{id=20, name='etudiant', birthday=2015-03-23 00:00:00.0}
+2022-05-31 14:23:28.857  INFO 19028 --- [main] com.esprit.examen.TestServiceEtudiant    : Etudiant{id=21, name='etudiant', birthday=2015-03-23 00:00:00.0}
+2022-05-31 14:23:28.858  INFO 19028 --- [main] com.esprit.examen.TestServiceEtudiant    : Etudiant{id=22, name='etudiant', birthday=2015-03-23 00:00:00.0}
+2022-05-31 14:23:28.858  INFO 19028 --- [main] com.esprit.examen.TestServiceEtudiant    : Etudiant{id=23, name='etudiant', birthday=2015-03-23 00:00:00.0}
+2022-05-31 14:23:28.858  INFO 19028 --- [main] com.esprit.examen.TestServiceEtudiant    : Etudiant{id=24, name='etudiant', birthday=2015-03-23 00:00:00.0}
+2022-05-31 14:23:28.858  INFO 19028 --- [main] com.esprit.examen.TestServiceEtudiant    : Etudiant{id=25, name='etudiant', birthday=2015-03-23 00:00:00.0}
+2022-05-31 14:23:28.858  INFO 19028 --- [main] com.esprit.examen.TestServiceEtudiant    : Etudiant{id=26, name='etudiant', birthday=2015-03-23 00:00:00.0}
+2022-05-31 14:23:28.858  INFO 19028 --- [main] com.esprit.examen.TestServiceEtudiant    : Etudiant{id=27, name='etudiant', birthday=2015-03-23 00:00:00.0}
+2022-05-31 14:23:28.859  INFO 19028 --- [main] com.esprit.examen.TestServiceEtudiant    : Etudiant{id=28, name='etudiant', birthday=2015-03-23 00:00:00.0}
+2022-05-31 14:23:28.859  INFO 19028 --- [main] com.esprit.examen.TestServiceEtudiant    : Etudiant{id=29, name='etudiant', birthday=2015-03-23 00:00:00.0}
+2022-05-31 14:23:28.859  INFO 19028 --- [main] com.esprit.examen.TestServiceEtudiant    : Etudiant{id=30, name='etudiant', birthday=2015-03-23 00:00:00.0}
+2022-05-31 14:23:28.859  INFO 19028 --- [main] com.esprit.examen.TestServiceEtudiant    : Etudiant{id=31, name='etudiant', birthday=2015-03-23 00:00:00.0}
+2022-05-31 14:23:28.859  INFO 19028 --- [main] com.esprit.examen.TestServiceEtudiant    : Etudiant{id=32, name='etudiant', birthday=2015-03-23 00:00:00.0}
+2022-05-31 14:23:28.859  INFO 19028 --- [main] com.esprit.examen.TestServiceEtudiant    : Etudiant{id=33, name='etudiant', birthday=2015-03-23 00:00:00.0}
+2022-05-31 14:23:28.860  INFO 19028 --- [main] com.esprit.examen.TestServiceEtudiant    : Etudiant{id=34, name='etudiant', birthday=2015-03-23 00:00:00.0}
+2022-05-31 14:23:28.860  INFO 19028 --- [main] com.esprit.examen.TestServiceEtudiant    : Etudiant{id=35, name='etudiant', birthday=2015-03-23 00:00:00.0}
+2022-05-31 14:23:28.860  INFO 19028 --- [main] com.esprit.examen.TestServiceEtudiant    : Etudiant{id=36, name='etudiant', birthday=2015-03-23 00:00:00.0}
+2022-05-31 14:23:28.860  INFO 19028 --- [main] com.esprit.examen.TestServiceEtudiant    : Etudiant{id=37, name='etudiant', birthday=2015-03-23 00:00:00.0}
+2022-05-31 14:23:28.860  INFO 19028 --- [main] com.esprit.examen.TestServiceEtudiant    : Etudiant{id=38, name='etudiant', birthday=2015-03-23 00:00:00.0}
+2022-05-31 14:23:28.860  INFO 19028 --- [main] com.esprit.examen.TestServiceEtudiant    : Etudiant{id=39, name='etudiant', birthday=2015-03-23 00:00:00.0}
+2022-05-31 14:23:28.861  INFO 19028 --- [main] com.esprit.examen.TestServiceEtudiant    : Etudiant{id=40, name='etudiant', birthday=2015-03-23 00:00:00.0}
+2022-05-31 14:23:28.861  INFO 19028 --- [main] com.esprit.examen.TestServiceEtudiant    : Etudiant{id=41, name='etudiant', birthday=2015-03-23 00:00:00.0}
+2022-05-31 14:23:28.861  INFO 19028 --- [main] com.esprit.examen.TestServiceEtudiant    : Etudiant{id=42, name='etudiant', birthday=2015-03-23 00:00:00.0}
+2022-05-31 14:23:28.861  INFO 19028 --- [main] com.esprit.examen.TestServiceEtudiant    : Etudiant{id=43, name='etudiant', birthday=2015-03-23 00:00:00.0}
+2022-05-31 14:23:28.861  INFO 19028 --- [main] com.esprit.examen.TestServiceEtudiant    : Etudiant{id=44, name='etudiant', birthday=2015-03-23 00:00:00.0}
+2022-05-31 14:23:28.861  INFO 19028 --- [main] com.esprit.examen.TestServiceEtudiant    : Etudiant{id=45, name='etudiant', birthday=2015-03-23 00:00:00.0}
+2022-05-31 14:23:28.861  INFO 19028 --- [main] com.esprit.examen.TestServiceEtudiant    : Etudiant{id=46, name='etudiant', birthday=2015-03-23 00:00:00.0}
+2022-05-31 14:23:28.861  INFO 19028 --- [main] com.esprit.examen.TestServiceEtudiant    : Etudiant{id=47, name='etudiant', birthday=2015-03-23 00:00:00.0}
+2022-05-31 14:23:28.862  INFO 19028 --- [main] com.esprit.examen.TestServiceEtudiant    : Etudiant{id=48, name='etudiant', birthday=2015-03-23 00:00:00.0}
+2022-05-31 14:23:28.862  INFO 19028 --- [main] com.esprit.examen.TestServiceEtudiant    : Etudiant{id=49, name='etudiant', birthday=2015-03-23 00:00:00.0}
+2022-05-31 14:23:28.862  INFO 19028 --- [main] com.esprit.examen.TestServiceEtudiant    : Etudiant{id=50, name='etudiant', birthday=2015-03-23 00:00:00.0}
+2022-05-31 14:23:28.862  INFO 19028 --- [main] com.esprit.examen.TestServiceEtudiant    : Etudiant{id=51, name='etudiant', birthday=2015-03-23 00:00:00.0}
+2022-05-31 14:23:28.862  INFO 19028 --- [main] com.esprit.examen.TestServiceEtudiant    : Etudiant{id=52, name='etudiant', birthday=2015-03-23 00:00:00.0}
+2022-05-31 14:23:28.862  INFO 19028 --- [main] com.esprit.examen.TestServiceEtudiant    : Etudiant{id=53, name='etudiant', birthday=2015-03-23 00:00:00.0}
+2022-05-31 14:23:28.862  INFO 19028 --- [main] com.esprit.examen.TestServiceEtudiant    : Etudiant{id=54, name='etudiant', birthday=2015-03-23 00:00:00.0}
+2022-05-31 14:23:28.862  INFO 19028 --- [main] com.esprit.examen.TestServiceEtudiant    : Etudiant{id=55, name='etudiant', birthday=2015-03-23 00:00:00.0}
+2022-05-31 14:23:28.863  INFO 19028 --- [main] com.esprit.examen.TestServiceEtudiant    : Etudiant{id=56, name='etudiant', birthday=2015-03-23 00:00:00.0}
+2022-05-31 14:23:28.863  INFO 19028 --- [main] com.esprit.examen.TestServiceEtudiant    : Etudiant{id=57, name='etudiant', birthday=2015-03-23 00:00:00.0}
+2022-05-31 14:23:28.863  INFO 19028 --- [main] com.esprit.examen.TestServiceEtudiant    : Etudiant{id=58, name='etudiant', birthday=2015-03-23 00:00:00.0}
+2022-05-31 14:23:28.863  INFO 19028 --- [main] com.esprit.examen.TestServiceEtudiant    : Etudiant{id=59, name='etudiant', birthday=2015-03-23 00:00:00.0}
+2022-05-31 14:23:28.863  INFO 19028 --- [main] com.esprit.examen.TestServiceEtudiant    : Etudiant{id=60, name='etudiant', birthday=2015-03-23 00:00:00.0}
+2022-05-31 14:23:28.863  INFO 19028 --- [main] com.esprit.examen.TestServiceEtudiant    : Etudiant{id=67, name='etudiant', birthday=2015-03-23 00:00:00.0}
+2022-05-31 14:23:28.863  INFO 19028 --- [main] com.esprit.examen.TestServiceEtudiant    : Etudiant{id=69, name='etudiant', birthday=2015-03-23 00:00:00.0}
+2022-05-31 14:23:28.864  INFO 19028 --- [main] com.esprit.examen.TestServiceEtudiant    : Etudiant{id=71, name='etudiant', birthday=2015-03-23 00:00:00.0}
+2022-05-31 14:23:28.864  INFO 19028 --- [main] com.esprit.examen.TestServiceEtudiant    : Etudiant{id=75, name='etudiant', birthday=2015-03-23 00:00:00.0}
+2022-05-31 14:23:28.864  INFO 19028 --- [main] com.esprit.examen.TestServiceEtudiant    : fin list des etudiants
+2022-05-31 14:23:28.907  INFO 19028 --- [main] com.esprit.examen.config.LoggingAspect   : méthode : getOne  exécutée avec succès
+2022-05-31 14:23:28.908  INFO 19028 --- [main] com.esprit.examen.TestServiceEtudiant    : Etudiant id : 1
+2022-05-31 14:23:28.908  INFO 19028 --- [main] com.esprit.examen.TestServiceEtudiant    : Etudiant{id=1, name='abdou', birthday=2015-03-27 00:00:00.0}
+2022-05-31 14:23:28.921  INFO 19028 --- [main] com.esprit.examen.config.LoggingAspect   : méthode : addEtudiant  exécutée avec succès
+2022-05-31 14:23:28.957  INFO 19028 --- [main] com.esprit.examen.config.LoggingAspect   : méthode : supprimerEtudiant  exécutée avec succès
+2022-05-31 14:23:28.960  INFO 19028 --- [main] com.esprit.examen.config.LoggingAspect   : méthode : getOne  exécutée avec succès
+2022-05-31 14:23:28.965  WARN 19028 --- [main] com.esprit.examen.TestServiceEtudiant    : Etudiant 76 supprimer avec succes
+2022-05-31 14:23:28.976  INFO 19028 --- [main] com.esprit.examen.config.LoggingAspect   : méthode : getOne  exécutée avec succès
+2022-05-31 14:23:28.985  INFO 19028 --- [main] com.esprit.examen.config.LoggingAspect   : méthode : modifierEtudiant  exécutée avec succès
+2022-05-31 14:23:28.989  INFO 19028 --- [main] com.esprit.examen.config.LoggingAspect   : méthode : getOne  exécutée avec succès
+2022-05-31 14:23:28.991  INFO 19028 --- [main] com.esprit.examen.TestServiceEtudiant    : Etudiant 1modifier avec succes
+2022-05-31 14:23:28.998  INFO 19028 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-05-31 14:23:29.001  INFO 19028 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-31 14:23:29.005  INFO 19028 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-05-31 14:23:29.024  INFO 19028 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

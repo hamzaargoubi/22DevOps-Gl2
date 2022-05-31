@@ -64,7 +64,6 @@ public class Etudiant {
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", birthday=" + birthday +
-                ", cours=" + cours +
                 '}';
     }
 }

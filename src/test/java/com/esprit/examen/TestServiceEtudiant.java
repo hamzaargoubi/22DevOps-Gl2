@@ -1,6 +1,7 @@
 package com.esprit.examen;
 
 import com.esprit.examen.entities.Etudiant;
+import com.esprit.examen.entities.Salle;
 import com.esprit.examen.services.IEtudiantService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -12,12 +13,13 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
-import java.util.stream.Collectors;
+import lombok.extern.slf4j.Slf4j;
 
 import static org.junit.jupiter.api.Assertions.assertNull;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.assertj.core.api.Assertions.assertThat;
 
+@Slf4j
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class TestServiceEtudiant {
@@ -34,11 +36,17 @@ public class TestServiceEtudiant {
         assertThat(etudiant.getBirthday()).isNotNull();
         assertThat(etudiant.getName()).isNotNull();
         assertThat(etudiant.getId()).isNotNull();
+        log.info("Etudiant ajouter avec succes");
     }
 
     @Test
     public void testListEtudiants() {
         List<Etudiant> etudiants =  etudiantService.listEtudiant();
+        log.info("list des etudiants");
+        for (Etudiant e : etudiants) {
+            log.info(e.toString());
+        }
+        log.info("fin list des etudiants");
         assertThat(etudiants).size().isGreaterThan(0);
     }
 
@@ -48,6 +56,8 @@ public class TestServiceEtudiant {
         etudiant.setName("abdou");
         etudiantService.modifierEtudiant(etudiant);
         assertTrue(etudiantService.getOne(1L).getName().equals("abdou"));
+        log.info("Etudiant " + etudiant.getId() + "modifier avec succes");
+
     }
 
     @Test
@@ -57,11 +67,15 @@ public class TestServiceEtudiant {
         Long etudiantId = etudiantService.addEtudiant(new Etudiant("etudiant",date));
         etudiantService.supprimerEtudiant(etudiantId);
         assertNull(etudiantService.getOne(etudiantId));
+        log.warn("Etudiant " + etudiantId+ " supprimer avec succes");
+
     }
 
     @Test
     public void getOne(){
        Etudiant e= etudiantService.getOne(1L);
+        log.info("Etudiant id : " + 1L);
+        log.info(e.toString());
         assertThat(e).isNotNull();
     }
 }
