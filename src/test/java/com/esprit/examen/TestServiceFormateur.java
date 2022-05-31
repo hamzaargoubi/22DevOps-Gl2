@@ -4,6 +4,7 @@ import com.esprit.examen.entities.Contrat;
 import com.esprit.examen.entities.Formateur;
 import com.esprit.examen.entities.Poste;
 import com.esprit.examen.services.IFormateurService;
+import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,16 +14,15 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.assertj.core.api.Assertions.assertThat;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-
+@Slf4j
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class TestServiceFormateur {
-    private static final Logger l = LogManager.getLogger(TestServiceFormateur.class);
     @Autowired
     public IFormateurService formateurService;
 
@@ -31,8 +31,8 @@ public class TestServiceFormateur {
     public void addFormateur() {
             Formateur formateur = new Formateur("nom", "prenom", Poste.INGENIEUR,
                     Contrat.CDI, "test@test.com", "password");
-            assertEquals(Contrat.CDI,formateur.getContrat());
-            formateurService.addFormateur(formateur);
+            assertNotNull(formateurService.addFormateur(formateur));
+            log.info("success");
         }
 
     @Test
